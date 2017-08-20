@@ -1,205 +1,122 @@
-tyto ![alt tag](https://raw.github.com/jh3y/tyto/master/images/tyto.png)
-==
-__tyto__ is a completely configurable, extensible and customizable management and organisation tool (wow that's a mouthful!)
-###demo/site
-just visit [jh3y.github.io/tyto](http://jh3y.github.io/tyto).
+[![Build Status](https://travis-ci.org/jh3y/tyto.svg?branch=master)](https://travis-ci.org/jh3y/tyto)
+tyto ![alt tag](https://raw.github.com/jh3y/tyto/master/src/img/tyto.png)
+===
+__tyto__ is an extensible and customizable management and organisation tool
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto1.png)
+just visit [jh3y.github.io/tyto](http://jh3y.github.io/tyto)!
 
-###features
-* nice simple user interface for managing and organising
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/app_three_cols.png)
+
+### Features
+* minimal UI
 * no accounts necessary
-* easy to use
-* easy to configure
-* easy to extend and develop
+* intuitive
+* extensible
 * localStorage persistence
-* sortable columns and items
+* time tracking
+* sortable UI
+* task linking
+* Markdown support
 * etc.
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto6.gif)
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/add_task.gif)
 
-###tyto has had a big overhaul
-after the great feedback it received previously on HN. New features have been added that people requested.
+### Why tyto? What's it for?
 
-###what's been happening.
-* __11/12/13__: Posted to HN, really great and very appreciated feedback from a large group of people.
-* __14/02/14__: V1.1.0 released with plenty of new features that were raised in the first showing.
-* __16/02/14__: V1.2.0 new release with jQuery UI implementation for sorting columns and items.
+Tyto arose from the want for an electronic post-it board without the need for accounts. Something simple and intuitive that could be easily shared.
 
+It's also the product of my own curiosity being used as an opportunity to pick up new tech stacks. It started as a vanilla JS app utilising one file and experimenting with HTML5 drag and drop. It then grew a little more, and a little more after that. Now it uses Backbone w/ Marionette. The next step? Most likely Angular 2.0 or React.
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto8.gif)
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/edit_view.png)
 
-###why tyto? what's it for?
-To be honest __tyto__ arose from my own and other members of my then team desiring something easy to organise and manage your own daily workflow. This could be something simple like the current development tasks on your plate or maybe the meetings you have scheduled in the current week coming. The ability to also share this is important.
+In truth, most organisations have some form of tool for what Tyto is doing. In my experience though, they can be cumbersome, clunky and just a bit noisy. Some employees tend to dislike internal tools. You still see whiteboards and walls plastered in sticky notes.
 
-It is true that most organisations have some form of tool for this exact problem but in my experience many employees don't actually like what they are using and you still see peoples whiteboards and walls etc. covered in sticky notes.
+This is where Tyto came from, It's my personal intuitive and minimal TodoMVC. No accounts necessary and the source isn't too hard to grasp making it rather easy to extend and customise.
 
-This is why __tyto__ came about. It's simple to use, no accounts needed, you can configure it how you want, theme it and the source code isn't hard to grasp as the tech under the bonnet makes it very easy to understand therefore making it also easily extensible and customizable.
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/edit_task.gif)
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto2.png)
+### Who's it for?
+Developer and project managers were the original target audience. A means to share project progression on a more _personal_ level. As opposed to publicly through an internal system. Almost like a complimentary attachment to an email.
 
-###who 's it for?
-Initially, __tyto__ was intended for developers and project managers as an easy way to share current tasks and project progression.
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/change_color.gif)
 
-For example; a developer may have columns set up for 'to do', 'in progress', 'awaiting merge' and 'done'. Then this can easily be shared with the project manager by using the email function. Another perspective could be that the project manager will configure a default configuration of columns etc. and then share this with the developer to load and then email back or share when necessary.
+There are no restrictions though, it's open source. Not quite right out of the box? Change it :smile:
 
-However, why have this restriction? It doesn't really make sense. As __tyto__ can be extended, configured and customized however you see fit, it can be used for many different purposes.
+Extensibility provides a means to create a bespoke version based on theme or functionality.
 
-Examples:
-* the plan for the week ahead.
-* ingredient lists.
-* priority lists etc.
-* managing your xmas shopping
-
-To be honest, __tyto__ is in its very infant stages and is being shared to see if it gathers enough interest. It is also assumed that while it is being shared new uses will be discovered and features will be proposed as with any piece of tech.
+Tyto is a personal pet of mine and if it can help others, that's great!
 
 
-###using tyto
-the nice thing about __tyto__ is that you can use it however you want to and it's easy to do so. If you just want to simply use it and try it out for a bit then simply do that by visiting [jh3y.github.io/tyto](http://jh3y.github.io/tyto), the beauty of 'no accounts necessary'.
 
-Your data will be persisted in the browser using localStorage so you can close the tab browser etc. and you won't lose anything. 
+###Using tyto
+Just want to use it? Do that by visiting [jh3y.github.io/tyto](http://jh3y.github.io/tyto).
 
-If you want to move to a different browser or machine, simply use the __export__ action to export a json file which can be loaded in wherever you use __tyto__. 
+GitHub flavored markdown is supported thanks to `marked`.
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto7.gif)
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/markdown.gif)
 
-As for a nice persistent workflow across devices, I haven't implemented accounts and it's not something I am keen on doing to be honest as I believe it takes away from __tyto__. 
+This also enables you to link to boards, columns and other tasks by using the `#` character
 
-However, you can easily integrate with something like Google Drive or Dropbox using their respective desktop features to keep track of your tasks by exporting and loading your task file to a shared folder on your machine. This works for me going between machines.
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/linking.gif)
 
-####using tyto in your own environment to develop against, extend, etc.
-alternatively, if you want to use __tyto__ in your own environment or want to start hacking away at it and extending, configuring it etc. it's very easy!
-#####prerequisites
-if you're cloning the repo and setting up the codebase you are going to need __[node]()__ installed and also the __[grunt-cli]()__.
-#####set up
-1. simply clone the repo.
+Changes are persistent thanks to `localStorage`.
+
+Want to move to a different browser or machine though? Use the export utility to export a json file. Load this using the import utility.
+
+A persistent workflow across devices? I'm afraid I haven't implemented that. Accounts is _not_ something I am keen on implementing/hosting right now. I think it diverts from my original intention with Tyto.
+
+#### Your own environment
+##### Prerequisites
+If you're cloning the repo and setting up the codebase you are going to need __node__(_preferably __yarn___) and  __gulp__ installed.
+
+##### Set up
+1. Clone the repo.
 
         git clone https://github.com/jh3y/tyto.git
-    
-2. navigate into the repo and install the dependencies.
+
+2. Navigate into the repo and install the dependencies.
 
         cd tyto
-        npm install
-    
-3. simply run grunt to take care of preprocessing and running a webserver instance for you on port 1987(which can be configured).
+        yarn (alternatively, npm install)
 
-        grunt
+3. Run gulp to take care of preprocessing and running a local static server instance(project utilises BrowserSync).
 
-####hosting tyto
-if you simply wish to host __tyto__ in your own environment you can do. I would suggest just taking a snapshot of the `gh-pages` branch and ftp'ing this onto your desired server or web space.
+        gulp
 
-in most cases and ideally you will want to configure __tyto__ to your own needs and tweak it accordingly whether it be with styles and themes or you want to change the branding, html etc. To do this, the best way is to follow the instructions for developing against __tyto__ and then taking the output from this and pushing it to a desired environment or server.
+#### Hosting
+I would suggest just taking a snapshot of the `gh-pages` branch and ftp'ing this onto your desired server or web space. Alternatively, follow the set up procedure and FTP the contents of the `public` directory.
 
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto3.png)
+If you wish to host on Github. Follow the set up procedure first(ideally, with a fork). When happy with your version, use the `deploy` task. This will require familiarity with `gulp-gh-pages` in order to publish to the correct location if other than `gh-pages`.
 
-####configuration
-a nice feature of __tyto__ is how easily configurable it is. It handles this by having a config file that is shimmed for use with requireJS. This file is a javascript file that simply defines a block of json which is the configuration or options.
-#####autoSave
-sets whether __tyto__ should auto save actions
-#####showIntroModalOnLoad: bool
-sets whether to show the intro modal on page load.
-#####introModalId: string
-provides the string of the intro modal id for jQuery to use.
-#####helpModalId: string
-provides the string of the help modal id for jQuery to use.
-#####infoModalId: string
-provides the string of the info modal id for jQuery to use.
-#####DOMId: string
-provides the DOM id for the board component for use with jQuery.
-#####DOMElementSelector: string
-provides the CSS selector for the DOM element being used for the board.
-#####emailSubject: string
-defines a default subject of email generated by tyto.
-#####emailRecipient: string
-defines a default recipient of email generated by tyto.
-#####exportFilename: string
-defines the default filename for the json file when a board is exported.
-#####maxColumns: number
-defines the maximum amount of columns that can be created on a board.
-#####columns: object array
-this defines the default columns to be displayed on a board and the default tasks within those columns.
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/speed_dial.gif)
 
-For example;
-```javascript
-        [
-            {
-                title: 'A column',
-                    items: [
-                        {
-                            collapsed: false,
-                            title: 'An item',
-                            content: 'im your first item.'
-                        },
-                        {
-                            collapsed: true,
-                            title: 'A collapsed item',
-                            content: ' im another item.'
-                        }
-                    ]
-            },
-            {
-                title: 'Another column',
-                items: []
-            }
-        ]
-```
-###development
-the beauty of __tyto__ is how easy it is to change things and really customise and extend it to be exactly what you want.
-####under the hood
-there are a range of technologies being used under the hood to achieve this.
+### Development
+A strength of tyto is extensibility. Making changes whether it be functional or aesthetic is straightforward once familiar with the codebase.
+
+Any queries as to how things work in the codebase? Feel free to raise an issue with a question!
+
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/time_track.gif)
+
+####Under the hood
+There are a range of technologies being used under the hood.
 * jQuery
 * jQuery UI
-* requireJS
-* bootstrap
-* Font Awesome
-* Handlebars.js
-* CSS3
-* jade
-* less
-* coffeescript
-* grunt
-* modernizr
+* Material Design Lite
+* Lodash
+* Backbone
+* Marionette
+* Marked
+* Jade
+* Stylus
+* Babel
+* Gulp
 
-of course, the use of jade, less and coffeescript or any of the technology being used is completely optional but for me personally developing using jade, less and coffeescript in combination with grunt makes development very speedy as the project uses grunt-contrib-connect and grunt-contrib-watch also.
-####templating
-using jade and handlebars has made it very easy to template html for __tyto__. this makes it also easy to extend or customize in a desirable way.
+![alt tag](https://raw.github.com/jh3y/pics/master/tyto/move_task.gif)
 
-using the text plugin for requireJS, __tyto__ pulls in templates and then using handlebars generates items, columns, and email drafts so changing entities is as easy as changing the template.
-
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto9.gif)
-
-###roadmap and known needs
-* the documentation isn't great and in some ways not clear. this does mean that there are probably ways the implementation could be made simpler.
-* mobile support for touch events such as drag and swipe possibly using hammer.js
-* __tyto__ is being shared in a very early age stage to get feedback primarily on how bad or maybe good it is or how it could be improved or approached differently. this is afterall my own little personal project.
-* online persistence if there was demand. this does however mean accounts which isn't cool but maybe the notion of guest accounts and persistent accounts whereby multiple boards could be saved.
-* better responsive design for various devices in general.
-
-
-![alt tag](https://raw.github.com/jh3y/tyto/master/screenshots/tyto5.png)
-
-
-
-###contributing
-if you feel __tyto__ would be something you'd like to contribute ideas to or enhancements please don't hesitate to get in touch or fork the repo and submit a pull request. i know __tyto__ has many flaws so I welcome the criticism to be honest as any publicity is good publicity.
-
-###license
+### License
 
 MIT
 
-if you do wish to use __tyto__ please star the repo or fork it, it helps it get spread. Also if you have an interesting use or example usage please don't hesitate to share it and it can be put up as an example.
+---------------------------
 
-
-tyto - http://jh3y.github.io/tyto
-Licensed under the MIT license
-
-[Jhey Tompkins](https://github.com/jh3y) (c) 2014.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-@jh3y
+Made with :sparkles: [@jh3y](https://twitter.com/@_jh3y) 2017

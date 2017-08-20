@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "4"
+sudo: false
+install:
+  - npm install -g mocha-phantomjs
+  - npm install -g gulp
+  - npm install
+before_script:
+  - phantomjs --version
+  - mocha-phantomjs --version
+  - gulp build:complete
+  - sleep 5 # give gulp background task some time to execute.
+script:
+  - npm run test
